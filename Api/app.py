@@ -137,7 +137,7 @@ def upload_file():
         return jsonify({"error": "No selected file"}), 400
 
     # Save the file temporarily
-    file.filename = 'newfile.csv'
+    
     bucket = storage.bucket()
     # Copy file from cache directory to Firebase Storage
     blob = bucket.blob(file.filename)
