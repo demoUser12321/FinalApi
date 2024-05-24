@@ -156,7 +156,7 @@ def upload_file():
     return jsonify({"message": f"LSTM Predictions saved to {generated_file}"}), 200
 
 
-@app.route(/)
+@app.route('/')
 def helloworld():
     return "welcome";
 if __name__ == '__main__':
